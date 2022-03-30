@@ -5,6 +5,9 @@ import torch.nn.functional as F
 from inplace_abn import InPlaceABN
 from kornia.utils import create_meshgrid
 
+#cz新增
+from .do_conv_pytorch import DOConv2d
+
 class ConvBnReLU(nn.Module):
     def __init__(self, in_channels, out_channels,
                  kernel_size=3, stride=1, pad=1,
